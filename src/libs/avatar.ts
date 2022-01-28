@@ -15,7 +15,7 @@ export const createAvatar = (
   fullName: string,
   options: CreateAvatarOptions = {}
 ): Avatar => {
-  const names = fullName.split(" ");
+  const names = fullName.trim().split(" ");
 
   const firstName = names[0];
   const lastName = names.length !== 1 ? names[names.length - 1] : null;

@@ -33,8 +33,11 @@ export default function App() {
         <Avatar avatar={avatar} />
       </div>
 
-      <label style={{ display: "block", marginBottom: "8px" }}>
-        <span style={{marginRight: '8px'}}>Hash input</span>
+      <label style={{ display: "block", marginBottom: "16px" }}>
+        <div>
+          <span style={{marginRight: '8px'}}>Hash input</span>
+        </div>
+
         <input
           type="text"
           value={value}
@@ -43,8 +46,12 @@ export default function App() {
         />
       </label>
 
-      <label style={{ display: "block", marginBottom: "8px" }}>
-        <span style={{marginRight: '8px'}}>Lightness</span>
+      <label style={{ display: "block", marginBottom: "16px" }}>
+        <div>
+          <span style={{marginRight: '8px'}}>Lightness</span>
+          <span>{lightness}</span>
+        </div>
+
         <input
           type="range"
           min="0"
@@ -55,8 +62,12 @@ export default function App() {
         />
       </label>
 
-      <label style={{ display: "block", marginBottom: "8px" }}>
-        <span style={{marginRight: '8px'}}>Saturation</span>
+      <label style={{ display: "block", marginBottom: "16px" }}>
+        <div>
+          <span style={{marginRight: '8px'}}>Saturation</span>
+          <span>{saturation}</span>
+        </div>
+
         <input
           type="range"
           min="0"
